@@ -82,7 +82,6 @@ header::before {
     </style>
     <body>
         <div class="container">
-
             <p>
                 <h1 style="font-size: 7vh;">Day 1</h1>
                 <img class="eventsBanner" src="https://cdn.discordapp.com/attachments/850508996061167689/873020518033424454/2.png" alt="Italian Trulli">
@@ -189,8 +188,35 @@ header::before {
         </p>
         </div>
         <header>
-            <h1> <img class="eventsBanner" style="position: sticky; max-height: 40vh;" src="https://cdn.discordapp.com/attachments/850508996061167689/873053733389488238/fdl-01.png" alt="Italian Trulli"></h1>
+            
+            <h1> <img class="eventsBanner" style="width: 400px;" src="https://cdn.discordapp.com/attachments/850508996061167689/873053733389488238/fdl-01.png" alt="Italian Trulli">
+                <audio controls autoplay id="myaudio">
+                    <source src="motley.mp3" type="audio/mpeg">
+                  </audio>
+                  <!-- <video controls autoplay>
+                    <source src="motleyvid.mp4" type="video/mp4">
+                    <source src="motleyvid.mp4" type="video/ogg">
+                    Your browser does not support the video tag.
+                  </video> -->
+                </h1>
         </header>
-    </body>
+        <script>
+            // Get the video
+            var audio = document.getElementById("myaudio");
+            
+            // Get the button
+            var btn = document.getElementById("myBtn");
+            
+            // Pause and play the video, and change the button text
+            function myFunction() {
+              if (audio.paused) {
+                audio.play();
+                btn.innerHTML = "Pause";
+              } else {
+                audio.pause();
+                btn.innerHTML = "Play";
+              }
+            }
+            </script>
     </body>
 </html>
