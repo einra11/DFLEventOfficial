@@ -4,7 +4,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Event's Rules and Mechanics</title>
     
-
     </head>
     <style>
        html {
@@ -15,7 +14,6 @@
     overflow: hidden;
     font-family: "Monument Extended", Arial, Helvetica, sans-serif;
 }
-
 body {
     color: white;
     margin: 0;
@@ -27,7 +25,6 @@ body {
     overflow-y: scroll;
     overflow-x: hidden;
 }
-
 header {
     box-sizing: border-box;
     min-height: 100vh;
@@ -37,7 +34,6 @@ header {
     text-align: center;
     text-transform: uppercase;
 }
-
 header h1 {
     margin: 0;
     position: absolute;
@@ -45,12 +41,10 @@ header h1 {
     left: 50%;
     transform: translate(-50%, -50%);
 }
-
 header,
 header:before {
     background: 50% 50% / cover;
 }
-
 header::before {
     content: "";
     position: absolute;
@@ -61,16 +55,15 @@ header::before {
     display: block;
     background: url(https://cdn.discordapp.com/attachments/820632057389776946/861757968991518740/unknown-5.png);
     background-size: cover;
-    min-height: 20vh;
+    transform-origin: center center 0;
+    transform: translateZ(-1px) scale(2);
+    z-index: -1;
+    min-height: 100vh;
 }
-
 .eventsBanner {
     display: block;
-    background-size: cover;
     max-height: 40vh;
-    
 }
-
 .container {
     z-index: 2;
     position: absolute;
@@ -82,37 +75,17 @@ header::before {
     color: grey;
     width: 100%;
 }
+
 .events{
     font-size: 4vh;
 }
     </style>
-
     <body>
-
         <div class="container">
 
             <p>
-                <!-- <h1 style="font-size: 7vh;">Day 1</h1>
-                <h1 style="color: brown;" class="events">🏳️‍🌈MACHO MEN</h1> 
-                <b>2 maps</b><br>
-                <b>4 bracket teams; 8 players, tourna rounds.</b><br><br><br>
-                
-                <h2>Mechanics:</h2><br>
-                -A candidate must be an Arcadia citizen. 
-                -Participants must conduct themselves in a lady-like manner and portray high moral  standards. <br>
-                -All contestants should use their natural voice.<br>
-                -The scoring system is 1-10 in each category. All judges’ decisions are final and ties will be broken by the judges.<br>
-                -Each contestant will have a private interview with the host.<br>
-                -Any type of talent is acceptable, except those that are illegal or which may cause  personal injury to the audience or any other person.<br>
-                -Talent will be limited to seven (5-10) minutes.<br>
-                -Contestants are required to conduct themselves in a professional manner at all times.<br>
-                -Any violent or threatening language or behavior will not be tolerated and will be  grounds for immediate disqualification and ejection from the facility.<br>
-                <br>
-                <h2 style="color: brown;">Prizes</h2>
-                <h4 style="color: yellow;">1st runner up: 1m<br>
-                    2nd: 800k
-                </h4>
-            </p> -->
+                <h1 style="font-size: 7vh;">Day 1</h1>
+                <img class="eventsBanner" src="https://cdn.discordapp.com/attachments/850508996061167689/873020518033424454/2.png" alt="Italian Trulli">
 
             <p>
                 <h1 style="font-size: 7vh;">Day 2</h1>
@@ -193,6 +166,7 @@ header::before {
                     Total: 2.5M<br>
                      </h4>
             </p>
+            <p>
             <img class="eventsBanner" src="https://cdn.discordapp.com/attachments/850508996061167689/873020533434888253/Untitled-16.png" alt="Italian Trulli">
             <b>2 maps</b><br>
             <b>4 bracket teams; 8 players, tourna rounds.</b><br><br><br>
@@ -212,12 +186,12 @@ header::before {
             <h4 style="color: yellow;">1st runner up: 1m<br>
                 2nd: 800k
             </h4>
-           
+        </p>
         </div>
         <header>
-            <h1>De Luca 3 day Events</h1>
+            <img class="eventsBanner" style="position: static;" src="https://cdn.discordapp.com/attachments/850508996061167689/873020539155923065/Untitled-17.png" alt="Italian Trulli">
+            <!-- <h1>De Luca's 3 day Event</h1> -->
         </header>
     </body>
     </body>
-
 </html>
